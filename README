@@ -1,268 +1,250 @@
-# 🫁 Valerix Lung Cancer Detection System
+<p align="center">
+  <strong style="font-size: 28px; color: #00F5C4;">VALERIX</strong><br/>
+  <span style="font-size: 18px;">Lung Cancer Detection System</span>
+</p>
 
-<div align="center">
+<p align="center">
+  <em>AI-powered medical imaging intelligence for early lung cancer detection and diagnosis support.</em>
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange?style=for-the-badge&logo=tensorflow)
-![CNN](https://img.shields.io/badge/CNN-Medical%20Imaging-green?style=for-the-badge)
-![AI](https://img.shields.io/badge/AI-Healthcare-red?style=for-the-badge)
-
-### 🔬 AI-Powered Lung Cancer Detection Using Deep Learning & Medical Image Analytics
-
-*Detecting lung abnormalities through Convolutional Neural Networks, Explainable AI, and Advanced Medical Imaging Techniques.*
-
-</div>
+<p align="center">
+  Deep Learning · CNN · Medical Imaging · TensorFlow · Healthcare AI
+</p>
 
 ---
 
-## 📖 Overview
+## Overview
+
+**Valerix Lung Cancer Detection System** is an advanced Deep Learning solution designed to assist in the early detection of lung cancer using CT scan and medical imaging data.
+
+The system leverages Convolutional Neural Networks (CNNs) to analyze lung scan images, identify suspicious patterns, and classify cases into diagnostic categories. By combining medical imaging with Artificial Intelligence, Valerix aims to support healthcare professionals with faster and more accurate screening.
+
+---
+
+## Why This Project?
 
 Lung cancer remains one of the leading causes of cancer-related deaths worldwide. Early diagnosis significantly improves treatment outcomes and survival rates.
 
-The **Valerix Lung Cancer Detection System** is an advanced Deep Learning solution designed to analyze CT scan images and classify them into:
+Traditional diagnosis requires extensive manual analysis by radiologists. Valerix introduces an intelligent AI-assisted approach that:
 
-- 🟢 Normal
-- 🟡 Benign
-- 🔴 Malignant
-
-The system leverages a custom-built CNN architecture (**ValerixNet**) combined with visualization and explainability techniques to provide reliable predictions and meaningful insights into model behavior.
-
----
-
-## 🎯 Project Objectives
-
-✔ Automate lung cancer detection from CT scan images
-
-✔ Classify scans into multiple diagnostic categories
-
-✔ Improve diagnostic efficiency using AI
-
-✔ Provide explainable predictions through activation heatmaps
-
-✔ Visualize model performance with comprehensive analytics
-
-✔ Demonstrate practical healthcare AI applications
+- Detects cancerous patterns automatically
+- Reduces diagnosis time
+- Improves screening efficiency
+- Supports medical decision-making
+- Provides visual interpretability using AI
 
 ---
 
-# 🏗️ System Architecture
+## Key Features
+
+### Intelligent Image Analysis
+
+- CT Scan Processing
+- Medical Image Classification
+- Deep Feature Extraction
+- Automated Diagnosis Support
+
+### Deep Learning Model
+
+- Convolutional Neural Network (CNN)
+- TensorFlow & Keras Implementation
+- Medical Image Classification Pipeline
+- High-Accuracy Prediction Framework
+
+### Explainable AI
+
+- Grad-CAM Visualization
+- Heatmap Generation
+- Region-of-Interest Identification
+- Visual Decision Support
+
+### User-Friendly Interface
+
+- Upload CT Scan Images
+- Instant Prediction Results
+- Confidence Score Display
+- Interactive Visualization
+
+---
+
+## System Workflow
 
 ```text
-CT Scan Images
+CT Scan Image
        │
        ▼
-Data Preprocessing
-       │
-       ▼
-Image Augmentation
-       │
-       ▼
-ValerixNet CNN Model
-       │
-       ▼
-Feature Extraction
-       │
-       ▼
-Classification Layer
-       │
-       ▼
-Prediction
- ┌─────────────┬─────────────┬─────────────┐
- │   Normal    │   Benign    │ Malignant   │
- └─────────────┴─────────────┴─────────────┘
-       │
-       ▼
-Explainable AI Visualizations
+┌─────────────────────┐
+│ Image Preprocessing │
+└─────────┬───────────┘
+          ▼
+┌─────────────────────┐
+│ Feature Extraction  │
+└─────────┬───────────┘
+          ▼
+┌─────────────────────┐
+│ CNN Model Analysis  │
+└─────────┬───────────┘
+          ▼
+┌─────────────────────┐
+│ Cancer Prediction   │
+└─────────┬───────────┘
+          ▼
+┌─────────────────────┐
+│ Grad-CAM Heatmaps   │
+└─────────┬───────────┘
+          ▼
+┌─────────────────────┐
+│ Diagnostic Report   │
+└─────────────────────┘
 ```
 
 ---
 
-# 🧠 Deep Learning Model
+## Project Highlights
 
-The project uses a custom Convolutional Neural Network called:
+### Medical Image Processing
 
-## ValerixNet
+The system performs:
 
-The architecture consists of:
-
-### Feature Extraction Layers
-
-- Multiple Convolutional Layers
-- Batch Normalization
-- ReLU Activation
-- Max Pooling Layers
-- Dropout Regularization
-
-### Classification Layers
-
-- Global Average Pooling
-- Dense Layers
-- Softmax Output Layer
-
-### Performance Enhancements
-
-- Early Stopping
-- Learning Rate Scheduling
-- Data Augmentation
-- Dropout Regularization
-- Batch Normalization
-
----
-
-# 🔍 Classification Categories
-
-| Class | Description |
-|---------|-------------|
-| 🟢 Normal | Healthy lung tissue with no abnormalities |
-| 🟡 Benign | Non-cancerous lung nodules |
-| 🔴 Malignant | Cancerous tissue requiring medical attention |
-
----
-
-# 📊 Key Features
-
-## 🩺 Medical Image Processing
-
-- CT Scan Analysis
 - Image Normalization
+- Image Resizing
 - Noise Reduction
-- Feature Extraction
+- Feature Enhancement
+- Data Augmentation
+
+### Cancer Classification
+
+Possible classifications include:
+
+- Normal
+- Benign
+- Malignant
+
+### AI Explainability
+
+Grad-CAM technology highlights image regions influencing model predictions, helping improve transparency and trust in AI-assisted diagnosis.
 
 ---
 
-## 🤖 Deep Learning
+## Technology Stack
 
-- CNN-Based Classification
-- Multi-Class Prediction
-- Automated Feature Learning
-- High Accuracy Detection
-
----
-
-## 🔬 Explainable AI
-
-The system includes Grad-CAM style visualizations to highlight:
-
-- Suspicious Regions
-- Important Features
-- Model Attention Areas
-
-This helps improve model interpretability and trustworthiness.
+| Technology | Purpose |
+|------------|----------|
+| Python | Core Development |
+| TensorFlow | Deep Learning Framework |
+| Keras | CNN Model Development |
+| OpenCV | Image Processing |
+| NumPy | Numerical Computing |
+| Pandas | Data Handling |
+| Matplotlib | Visualization |
+| Seaborn | Data Analytics |
+| Scikit-Learn | Model Evaluation |
 
 ---
 
-## 📈 Advanced Analytics
+## Deep Learning Architecture
 
-The project automatically generates:
-
-### Training Dashboard
-
-- Training Accuracy
-- Validation Accuracy
-- Loss Curves
-- AUC Curves
-- Precision
-- Recall
-
----
-
-### Model Evaluation
-
-- Confusion Matrix
-- ROC Curves
-- Classification Report
-- F1 Score Analysis
-- Precision & Recall Metrics
-
----
-
-### Visual Reports
-
-- CT Sample Gallery
-- Activation Heatmaps
-- Architecture Visualization
-- Dataset Overview
-- Prediction Dashboard
+```text
+Input CT Scan Image
+          │
+          ▼
+Conv2D Layer
+          │
+          ▼
+MaxPooling Layer
+          │
+          ▼
+Conv2D Layer
+          │
+          ▼
+MaxPooling Layer
+          │
+          ▼
+Flatten Layer
+          │
+          ▼
+Dense Layer
+          │
+          ▼
+Dropout Layer
+          │
+          ▼
+Output Classification
+```
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```text
 Valerix-Lung-Cancer-Detection/
 │
-├── valerix_lung_cancer_detection.py
+├── app.py
+├── model/
+│   └── lung_cancer_model.h5
+│
+├── dataset/
+│   ├── train/
+│   ├── validation/
+│   └── test/
+│
+├── static/
+│   ├── uploads/
+│   ├── predictions/
+│   └── heatmaps/
+│
+├── templates/
+│   ├── index.html
+│   └── result.html
 │
 ├── outputs/
+│   ├── prediction_results.png
+│   ├── confusion_matrix.png
+│   ├── accuracy_curve.png
+│   └── gradcam_heatmap.png
 │
-├── valerix_training_dashboard.png
-├── valerix_ct_samples.png
-├── valerix_confusion_matrix.png
-├── valerix_roc_curves.png
-├── valerix_dataset_overview.png
-├── valerix_heatmaps.png
-├── valerix_architecture.png
-├── valerix_metrics_report.png
-├── valerix_prediction_panel.png
-├── valerix_pixel_distribution.png
-│
-└── README.md
+├── requirements.txt
+├── README.md
+└── train_model.py
 ```
 
 ---
 
-# ⚙️ Technologies Used
+## Installation
 
-### Programming Language
-
-- Python
-
-### Deep Learning Framework
-
-- TensorFlow
-- Keras
-
-### Computer Vision
-
-- OpenCV
-
-### Data Processing
-
-- NumPy
-- Pandas
-
-### Machine Learning
-
-- Scikit-Learn
-
-### Visualization
-
-- Matplotlib
-
----
-
-# 🚀 Installation
-
-## Clone Repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Valerix-Lung-Cancer-Detection.git
+git clone https://github.com/abdulmajeedhub/Valerix-Lung-Cancer-Detection.git
+```
 
+### Navigate to Project
+
+```bash
 cd Valerix-Lung-Cancer-Detection
 ```
 
-## Install Dependencies
+### Create Virtual Environment
 
 ```bash
-pip install tensorflow
-pip install opencv-python
-pip install numpy
-pip install pandas
-pip install scikit-learn
-pip install matplotlib
+python -m venv venv
 ```
 
-Or
+### Activate Environment
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Linux / macOS:
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -270,132 +252,103 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Running the Project
+## Run the Application
+
+### Train Model
 
 ```bash
-python valerix_lung_cancer_detection.py
+python train_model.py
 ```
 
-The system will automatically:
+### Launch Application
 
-1. Generate CT scan data
-2. Preprocess images
-3. Train ValerixNet
-4. Evaluate model performance
-5. Generate visual reports
-6. Display diagnostic analytics
+```bash
+python app.py
+```
+
+Open:
+
+```text
+http://127.0.0.1:5000
+```
 
 ---
 
-# 📷 Generated Outputs
+## Model Performance
 
-## 📈 Training Dashboard
-
-Visual representation of:
+The model is evaluated using:
 
 - Accuracy
-- Loss
-- AUC
 - Precision
 - Recall
+- F1 Score
+- ROC-AUC Score
+- Confusion Matrix
+
+### Performance Visualizations
+
+Generated outputs include:
+
+- Training Accuracy Curve
+- Validation Accuracy Curve
+- Loss Curve
+- Confusion Matrix
+- ROC Curve
+- Grad-CAM Heatmaps
 
 ---
 
-## 🔥 Activation Heatmaps
+## Applications
 
-Highlights image regions influencing model decisions.
+This project can be used in:
 
----
-
-## 📊 Confusion Matrix
-
-Displays classification performance across all classes.
-
----
-
-## 📉 ROC Analysis
-
-Evaluates model discrimination capability using AUC scores.
+- Healthcare AI Research
+- Medical Imaging Analysis
+- Clinical Decision Support Systems
+- Hospital Screening Systems
+- Diagnostic Assistance Platforms
+- Academic Research Projects
 
 ---
 
-## 🩺 Prediction Dashboard
+## Future Enhancements
 
-Shows real-time predictions with confidence scores.
-
----
-
-# 🌟 Why This Project Matters
-
-Healthcare professionals often analyze hundreds of medical scans daily.
-
-This project demonstrates how Artificial Intelligence can:
-
-- Assist radiologists
-- Improve diagnostic efficiency
-- Reduce analysis time
-- Support early detection
-- Enable scalable healthcare solutions
-
-While this implementation serves educational and research purposes, it showcases the real-world potential of AI in medical diagnostics.
-
----
-
-# 🔮 Future Enhancements
-
-### Planned Improvements
-
-- Real CT Scan Dataset Integration
-- DICOM Image Support
-- Transfer Learning Models
-- ResNet Architecture
-- EfficientNet Architecture
-- Web-Based Diagnostic Platform
+- Multi-Class Cancer Detection
+- Real-Time CT Scan Analysis
+- 3D Medical Imaging Support
 - Cloud Deployment
-- Real-Time Hospital Integration
-- Explainable AI Dashboard
-- Multi-Disease Detection
+- Explainable AI Expansion
+- Mobile Application Integration
+- Doctor Dashboard Portal
 
 ---
 
-# ⚠️ Disclaimer
+## Learning Outcomes
 
-This project is intended for:
+This project demonstrates expertise in:
 
-- Educational Purposes
-- Research Demonstrations
-- AI Learning
-- Medical Imaging Experiments
-
-It is **not a replacement for professional medical diagnosis or treatment.**
-
----
-
-# 👨‍💻 Author
-
-## Abdul Majeed A
-
-### AI & Machine Learning Engineer
-
-Passionate about:
-
-- Artificial Intelligence
 - Deep Learning
 - Computer Vision
-- Healthcare AI
-- Machine Learning Research
-
-### Connect With Me
-
-- GitHub: https://github.com/abdulmajeedhub
-- LinkedIn: https://www.linkedin.com/in/abdulmajeed25288
+- Medical Image Processing
+- TensorFlow & Keras
+- CNN Architecture Design
+- Explainable AI
+- Healthcare Technology
+- Artificial Intelligence
 
 ---
 
-<div align="center">
+## Disclaimer
 
-### 🫁 Empowering Healthcare Through Artificial Intelligence
+This project is developed for educational, research, and portfolio purposes. It is not intended to replace professional medical diagnosis. Clinical decisions should always be made by qualified healthcare professionals.
 
-⭐ If you found this project useful, consider giving it a star.
+---
 
-</div>
+<p align="center">
+  <strong>Valerix Lung Cancer Detection System</strong><br/>
+  <sub>Early Detection. Intelligent Analysis. Better Outcomes.</sub>
+</p>
+
+<p align="center">
+  Built with Deep Learning and Healthcare Intelligence
+</p>
